@@ -1,0 +1,1 @@
+$(document).ready(function(){$.protip()});var el=$(".my-el");el.protipShow(),el.protipShow({title:"My new title"}),el.protipSet({trigger:"click"}),el.protipShow({trigger:"click"});
