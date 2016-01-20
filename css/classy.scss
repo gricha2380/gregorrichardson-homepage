@@ -371,8 +371,13 @@ $shadows-big: multiple-box-shadow(300);
         img {
             max-width: 120px;
             width: 120px;
+            &:hover {
+                max-width: 125px;
+                width: 125px;
+            }
         }
     }
+    #more {margin-left: -20px;}
     .nav {
         padding: 0 20px;
         width: initial;
@@ -383,8 +388,14 @@ $shadows-big: multiple-box-shadow(300);
     p.full {
         width: inherit;
     }
-    .about-me {display:none;}
+    .about-me {
+        display:none;
+    }
     .about-me-mobile {
         display: block;
+        width: 90%;
+    }
+    .featherlight.mega .featherlight-content {
+        overflow: auto;
     }
 }
