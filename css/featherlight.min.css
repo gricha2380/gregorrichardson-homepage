@@ -93,7 +93,7 @@
     }
 }
 
-@media only screen and (max-width:1024px) {
+/*@media only screen and (max-width:1024px) {
     .featherlight .featherlight-content {
         margin-left: 10px;
         margin-right: 10px;
@@ -101,7 +101,7 @@
         padding: 10px 10px 0;
         border-bottom: 10px solid transparent
     }
-}
+}*/
 
 @media only screen and (max-width:700px) {
 .featherlight .featherlight-content {
