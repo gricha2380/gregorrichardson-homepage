@@ -168,9 +168,20 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 105216,
+		"initialSize": 103876,
 		"inputAbbreviatedPath": "\/img\/me.png",
 		"outputAbbreviatedPath": "\/img\/me.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/metoo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 105131,
+		"inputAbbreviatedPath": "\/img\/metoo.png",
+		"outputAbbreviatedPath": "\/img\/metoo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
