@@ -186,6 +186,16 @@ p.full {
     font-size: 1.2em;
     h2 {
         margin: 0;
+
+        //slab style
+        color: rgba(255, 255, 255, 0.2);
+        text-transform: uppercase;
+        font-family: "Alfa Slab One";
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-size: 1.3em;
+        word-spacing: -4px;
+        margin-bottom: -2px;
     }
     .URL {
         a {
