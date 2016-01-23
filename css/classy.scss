@@ -282,9 +282,9 @@ p.full {
 
 // CSS TWINKLE STAR
 @function multiple-box-shadow ($n) {
-    $value:'#{random(4000)-2000}px #{random(4000)-2000}px #fff';
+    $value:'#{random(5000)-3000}px #{random(5000)-3000}px #fff';
     @for $i from 2 through $n {
-        $value:'#{$value} , #{random(4000)-2000}px #{random(4000)-2000}px #fff'
+        $value:'#{$value} , #{random(5000)-3000}px #{random(5000)-3000}px #fff'
     }
     @return unquote($value);
 }
@@ -317,6 +317,7 @@ $shadows-big: multiple-box-shadow(300);
     width: 1px;
     height: 1px;
     box-shadow: $shadows-small;
+    border-radius: 2px;
     animation: star-rotate 2000s linear infinite;
 }
 
@@ -324,6 +325,7 @@ $shadows-big: multiple-box-shadow(300);
     width: 2px;
     height: 2px;
     box-shadow: $shadows-medium;
+    border-radius: 2px;
     animation: star-rotate 1500s linear infinite;
 }
 
@@ -331,6 +333,7 @@ $shadows-big: multiple-box-shadow(300);
     width: 3px;
     height: 3px;
     box-shadow: $shadows-big;
+    border-radius: 2px;
     animation: star-rotate 1000s linear infinite;
 }
 
