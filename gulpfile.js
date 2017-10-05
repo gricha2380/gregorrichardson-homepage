@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 gulp.task('serve', ['css'], function() {
 
     browserSync.init({
-        server: "output",
+        server: "",
         port: 2380
     });
     gulp.watch("*.html",["html"]).on('change', browserSync.reload);
