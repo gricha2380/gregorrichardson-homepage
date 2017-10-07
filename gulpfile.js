@@ -16,7 +16,7 @@ var user = process.env.FTP_USER;
 var password = process.env.FTP_PWD;
 var host = '173.201.63.1';
 var port = 21;
-var localFilesGlob = ['./**/*'];
+var localFilesGlob = ['css/*','js/*','img/*','*.html'];//['./**/*'];
 var remoteFolder = '/gregor'
 
 // helper function to build an FTP connection based on our configuration
@@ -38,8 +38,8 @@ function getFtpConnection() {
  * Usage: `FTP_USER=someuser FTP_PWD=somepwd gulp ftp-deploy`
  */
 gulp.task('ftp-deploy', function() {
-
     var conn = getFtpConnection();
+    gutil.log(conn);
 
     return gulp.src(localFilesGlob, { base: '.', buffer: false })
         .pipe( conn.newer( remoteFolder ) ) // only upload newer files
@@ -67,7 +67,6 @@ gulp.task('ftp-deploy-watch', function() {
       ;
     });
 });
-
 // END FTP
 
 // Static Server + watching scss/html files
