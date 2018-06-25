@@ -4,11 +4,10 @@ var gulp = require('gulp'),
 	concat = require("gulp-concat"),
 	gutil = require('gulp-util'),
 	cssnano = require('gulp-cssnano'), // if I'm working with regular CSS
-	htmlmin = require('gulp-htmlmin');
-	map = require('gulp-sourcemaps');
+	htmlmin = require('gulp-htmlmin'),
+	map = require('gulp-sourcemaps'),
 	del = require('del'),
 	browserSync = require('browser-sync').create();
-	var gutil = require( 'gulp-util' );
 	var ftp = require( 'vinyl-ftp' );
 
 // FTP Info
@@ -17,7 +16,7 @@ var password = process.env.FTP_PWD;
 var host = '173.201.63.1';
 var port = 21;
 var localFilesGlob = ['css/*','js/*','img/*','*.html'];//['./**/*'];
-var remoteFolder = '/gregor'
+var remoteFolder = '/gregor';
 
 // helper function to build an FTP connection based on our configuration
 function getFtpConnection() {
@@ -37,7 +36,7 @@ function getFtpConnection() {
  *
  * Usage: `FTP_USER=someuser FTP_PWD=somepwd gulp ftp-deploy`
  */
-gulp.task('ftp-deploy', function() {
+gulp.task('ftp', function() {
     var conn = getFtpConnection();
     gutil.log(conn);
 
@@ -53,7 +52,7 @@ gulp.task('ftp-deploy', function() {
  *
  * Usage: `FTP_USER=someuser FTP_PWD=somepwd gulp ftp-deploy-watch`
  */
-gulp.task('ftp-deploy-watch', function() {
+gulp.task('ftp-watch', function() {
 
     var conn = getFtpConnection();
 
