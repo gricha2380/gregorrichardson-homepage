@@ -1,0 +1,5 @@
+# robots.txt for http://www.gregorrichardson.com/
+
+User-agent: *
+Disallow: /GREGOR_RICHARDSON_Resume.pdf
+Disallow: /Gregor_Richardson_Resume.pdf
